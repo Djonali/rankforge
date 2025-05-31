@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/rankforge",
-            "baseHref": "/",
+            "baseHref": "/rankforge/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -31,7 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+               "src/assets/scss/tailwind.scss",
+              "src/styles.scss",
+              "src/assets/css/materialdesignicons.min.css"
             ],
             "scripts": []
           },
@@ -94,6 +96,13 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "rankforge:build:production",
+            "baseHref": "/rankforge/"
           }
         }
       }

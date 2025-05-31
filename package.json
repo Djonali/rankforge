@@ -4,24 +4,31 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base=/rankforge/"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.1.0",
-    "@angular/common": "^17.1.0",
-    "@angular/compiler": "^17.1.0",
-    "@angular/core": "^17.1.0",
-    "@angular/forms": "^17.1.0",
-    "@angular/platform-browser": "^17.1.0",
-    "@angular/platform-browser-dynamic": "^17.1.0",
-    "@angular/router": "^17.1.0",
-    "angular-cli-ghpages": "^2.0.3",
+    "@angular/animations": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "angular-feather": "^6.5.1",
+    "ngx-countup": "^13.1.0",
+    "ngx-slick-carousel": "^17.0.0",
+    "ngx-slickjs": "^1.5.2",
+    "node-sass": "^9.0.0",
     "rxjs": "~7.8.0",
+    "swiper": "^11.0.5",
+    "tiny-slider": "^2.9.4",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.14.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.1.1",
@@ -34,6 +41,10 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.3.2"
+    "typescript": "~5.3.2",
+    "@types/feather-icons": "^4.29.4",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17"
   }
 }

@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { IndexFiveComponent } from './page/index-five/index-five.component';
+
+export const routes: Routes = [
+    {'path' : '', component:IndexFiveComponent}
+ 
+];

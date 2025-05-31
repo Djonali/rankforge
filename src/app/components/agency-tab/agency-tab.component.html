@@ -1,0 +1,113 @@
+<section class="realtive md:py-24 py-16" id="services">
+    <div class="container relative">
+        <div class="grid grid-cols-1 pb-6 text-center">
+            <h3 class="font-semibold text-2xl leading-normal mb-4">“How It Works !!"</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">A simple, proven process designed to get you real results — without the confusion. We handle the tech, you focus on growing your business.</p>
+        </div><!--end grid-->
+
+        <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6">
+            <div class="lg:col-span-4 md:col-span-5">
+                <div class="sticky top-20">
+                    <ul class="flex-column p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                        <li role="presentation">
+                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" [ngClass]="activeIndex === 1 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : '' " (click)="tabClick(1)">
+                                <span class="block">Step 1</span>
+                                <span class="text-lg mt-2 block">Discovery Call</span>
+                                <span class="block mt-2">We learn about your goals and business.</span>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" [ngClass]="activeIndex === 2 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : '' " (click)="tabClick(2)">
+                                <span class="block">Step 2</span>
+                                <span class="text-lg mt-2 block">Strategy & Proposal</span>
+                                <span class="block mt-2">We craft a custom plan</span>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" [ngClass]="activeIndex === 3 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : '' " (click)="tabClick(3)">
+                                <span class="block">Step 3</span>
+                                <span class="text-lg mt-2 block">Design & Build</span>
+                                <span class="block mt-2">We design and develop your site</span>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" [ngClass]="activeIndex === 4 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : '' " (click)="tabClick(4)">
+                                <span class="block">Step 4</span>
+                                <span class="text-lg mt-2 block">SEO Setup</span>
+                                <span class="block mt-2">Optimization for search from day one.</span>
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" [ngClass]="activeIndex === 5 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : '' " (click)="tabClick(5)">
+                                <span class="block">Step 5</span>
+                                <span class="text-lg mt-2 block">Launch & Grow</span>
+                                <span class="block mt-2">Track, improve, and expand</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 md:col-span-7">
+                <div id="myTabContent" class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                    <div [ngClass]="activeIndex === 1 ? '' : 'hidden'">
+                        <img src="assets/images/blog/01.jpg" class="shadow dark:shadow-gray-700 rounded-md" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-lg font-medium">Discovery Call</h5>
+                            <p class="text-slate-400 mt-4">Our Discovery Call is a friendly, no-pressure conversation where we learn about your business, goals, challenges, and target audience. It’s your chance to tell us what you need — and our chance to understand how we can help. We’ll also answer your questions and explain what to expect next.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-teal-500">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div [ngClass]="activeIndex === 2 ? '' : 'hidden'">
+                        <img src="assets/images/blog/02.jpg" class="shadow dark:shadow-gray-700 rounded-md" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-lg font-medium">Strategy & Proposal</h5>
+                            <p class="text-slate-400 mt-4">After understanding your goals, we craft a tailored strategy that aligns with your business objectives. This includes site structure, SEO priorities, and content planning. You’ll receive a clear proposal outlining deliverables, timelines, and pricing — no surprises, just a roadmap for results. We only move forward once you’re confident.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-teal-500">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div [ngClass]="activeIndex === 3 ? '' : 'hidden'">
+                        <img src="assets/images/blog/03.jpg" class="shadow dark:shadow-gray-700 rounded-md" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-lg font-medium">Design & Build</h5>
+                            <p class="text-slate-400 mt-4">With your site structure in place, we implement foundational SEO: optimized meta tags, headers, image alt text, schema markup, and keyword integration. We also connect Google tools like Analytics and Search Console. This step ensures your site is ready to be indexed, ranked, and discovered by your ideal audience.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-teal-500">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div [ngClass]="activeIndex === 4 ? '' : 'hidden'">
+                        <img src="assets/images/blog/03.jpg" class="shadow dark:shadow-gray-700 rounded-md" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-lg font-medium">SEO Setup</h5>
+                            <p class="text-slate-400 mt-4">With your site structure in place, we implement foundational SEO: optimized meta tags, headers, image alt text, schema markup, and keyword integration. We also connect Google tools like Analytics and Search Console. This step ensures your site is ready to be indexed, ranked, and discovered by your ideal audience.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-teal-500">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div [ngClass]="activeIndex === 5 ? '' : 'hidden'">
+                        <img src="assets/images/blog/03.jpg" class="shadow dark:shadow-gray-700 rounded-md" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-lg font-medium">Launch & Grow</h5>
+                            <p class="text-slate-400 mt-4">Once your site is live, we test everything — speed, performance, and responsiveness. From there, we monitor rankings, track analytics, and fine-tune for better results. If you choose an ongoing plan, we’ll continue optimizing, adding content, and building authority to help your traffic and conversions grow consistently over time.</p>
+                            <div class="mt-4">
+                                <a href="" class="text-teal-500">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section>
